@@ -1,6 +1,6 @@
-# springlobby.268-alternative
+# springlobby0.268-alternative
 
-springlobby 0.268 with some fixes and some new features.
+springlobby 0.268 with some fixes and new features.
 
 # Fixes and new features made to springlobby 0.268
 
@@ -86,8 +86,14 @@ springlobby 0.268 with some fixes and some new features.
 &nbsp;  
 &nbsp;  
 
+# Contact:
+
+You could contact me on discord, github or in springlobby: my pseudo is flower.
+&nbsp;  
+&nbsp;  
 
 # Readme from springlobby original (https://github.com/springlobby/springlobby)
+
 all installation information can be found here:
 https://github.com/springlobby/springlobby/wiki/Install
 
