@@ -1,0 +1,424 @@
+ChangeLog of Springlobby
+
+## 0.268
+ - add support for showing client versions per user
+ - remove cpu info support
+ - fix #894 (unhandled exception & other errors when typing LEAVE commands into the server window)
+ - implement multi version support for relayhost
+ - lobby protocol updates
+ - update prdownloader: fix rapid caching check / fix rapid downloads with very small repos (<8 files)
+ - migrate website to https://springlobby.springrts.com/
+
+## 0.267
+ - fix connecting to unknown lobby servers (fingerprint mismatch)
+
+## 0.266
+ - Fix #886 (Unable to register due to certificate fingerprint mismatch)
+ - merge engine and version into one column
+
+## 0.265
+ - more verbose logging when starting spring / log exit code
+ - Rearange and realign buttons in singleplayer and battleroom tabs
+ - remove warning message when starting a match without opponet
+ - more verbose connect / disconnect messages
+ - use tls for https://api.springfiles.com / https://paste.springfiles.com
+ - use tls for springlobby updates
+ - fix by far the largest part of the replays freeze (with 1900 replays 107s -> 0.962s).
+ - fix error message "Failed to setup download" shown for no reason
+ - fix error message "Couldn't load GetMapInfoCount"
+ - fix some rare download bugs
+ - fix crash in votepanel on disconnect
+ - fix connecting to inofficial / test lobby servers
+ - fix chatpanel size with non-default dpi / font size
+ - fix out-of-tree compile
+ - fix display of seconds in the Duration column of the replay list
+ - fix display of missing map names in the replays list
+ - fix reading of gameTime from replays
+
+## 0.264
+ - improved the start button in battleroom
+ - log everything into springlobby.log (added downloader + unitsync handling)
+ - cmake 3.1 at least is required to compile springlobby
+ - replace boost:: with std:: in some places
+ - fix crash when re-selecting no map / no game in singleplayer tab
+ - updated buildslave to latest mxe (wxwidgets 3.0.3, etc)
+
+## 0.263
+ - more verbose logging to track down crashes
+
+## 0.262
+ - fix demo replay (spring engine not found)
+ - fix "autolaunch game"
+
+## 0.261
+ - fix rare crash on login / register
+ - add option to not launch spring when speccing a battle
+ - add timestamp to springlobby.log entries
+ - simplify engine compatiblity check: always do a full string compare
+ - fix Gtk-CRITICAL console messages
+ - log lobbyserver messages to springlobby.log
+ - rate limit download status: lowers cpu usage when downloading
+ - always use TLS / remove option to disable TLS
+ - fix compile with system jsoncpp
+ - don't prompt for empty downloads
+ - read locales from compile dir
+ - remove old + broken translations / make translations work again
+
+## 0.260
+ - reimplement channel history
+ - check if synced before game start / prompt for download
+ - don't send plain text PING when tls-handshaking
+ - increase default log verbosity
+
+## 0.259
+ - fix #791: cannot select last entry in engine list
+ - use more robust TLS handshake on connect (should solve issues when registering new username)
+ - don't write password to log when registering
+
+## 0.258
+ - fix regression #787: broken user registering due TLS support
+ - Install appdata file into canonical directory
+
+## 0.257
+ - fix unit restrictions
+ - add tls support
+ - battleroom: Add a promote button that sends !promote
+ - settings: make the lobby remember account password by default
+ - Edit->Autojoin channels joins immidiately if possible.
+
+## 0.256
+ - lazy init of unitsync (faster startup)
+ - fix crash when Scroll wheel over games in single player tab
+ - always validate rapid downloads
+ - don't log private conversations to springlobby.log
+
+## 0.255
+ - fix downloading with special chars in springlobby's data dirs
+ - merge lsl into prdownloader submodule
+
+## 0.254
+ - fix /changepassword
+ - fix minor memleaks
+
+## 0.253
+ - force SpringData to be set to DownloadDir
+ - fix irc colors
+
+## 0.252
+ - log help->system info into springlobby.log
+ - some cleanup
+
+## 0.251
+ - slightly refactor irc colors handling
+
+## 0.250
+ - heavily increase performance of chat output (fixes a DoS)
+
+## 0.249
+ - fix crash when parsing .sdfz (compressed spring demo file)
+ - fix crash with broken SpringData dirs
+
+## 0.248
+ - don't autodetect system installed spring to avoid crashes (see #707)
+ - always log to ~/.springlobby/springlobby.log
+
+## 0.247
+ - fix crash
+ - fix rapid tags downloaded twice
+
+## 0.246
+ - fix can't download more than one engine per session
+ - delete .sdp when rapid download failed
+
+## 0.245
+ - fix crash on battle close
+ - fix springsettings always greyed out
+ - fix vote panel shown only once
+ - fix notification on user login
+ - fix osx compile
+
+## 0.244
+ - fix memleaks
+ - improve metadata caching (i.e. map images are stored in small + large size, json is used for metadata)
+ - add "Notify me when game has ended" to context menu (sends !notify)
+ - don't show rapid meta files in downloads (i.e. version.gz)
+ - a lot of code simplifications / refactorings
+ - use prdownloader c-api (instead of using hacks to get download info)
+ - remove broken + unused crashreporter
+ - speedup demo reloading: only new files are parsed
+ - fix crash in FORCEJOINBATTLE
+ - drop Boost.Filesystem dependency
+ - add support for .sdfz replay format
+ - wxWidgets >= 3.0 is required to compile springlobby
+
+## 0.243
+ - remove /installer from source tarball
+ - installer: remove functionality to delete user content
+ - installer: cleanup
+ - disable broken popular/recent in map select dialog (fixes a bunch of problems)
+
+## 0.242
+ - keep selection when lists are resorted
+ - intergrate windows installer to the build process
+
+## 0.238 - 0.241
+ - skipped due build error
+
+## 0.237
+ - fix engine downloading
+
+## 0.236
+ - show a warning when version check is disabled
+ - fix osx crash when joining a battle and map isn't available local
+ - fix memleak
+ - fix hang !addbox is used in autohost mode
+ - fix relayhostmanager user not found error message
+ - fix hide vote buttons on vote cancelation
+ - update pr-downloader: switch from xmlrpc to json api
+ - use pr-downloader for update check (fixes proxy support)
+ - cleanup cmake: only add required include dirs to targets (requires cmake >=2.8.11)
+ - update win32 buildslave: most recent version of gcc/curl/boost/wxwidgets is used
+ - relicensed src/lsl as GPL to simplify release notes
+
+## 0.227 - 0.235
+ - skipped due build error
+
+## 0.226
+ - reimplemented all lists (battle/demos/users), should fix flickering / not updating
+ - validate dirs at start (update/download/cache/...)
+ - add UpdateChannel setting to switch between release and develop
+ - fix autoupdater always requested admin access
+ - fix several wx3.1 errors / warnings
+ - fix engine download bug in pr-downloader
+
+## 0.225
+ - fix start position loading from cache
+ - fix network timeout when using NAT + relayhost
+ - fix sync check on 32 bit platforms (mostly windows)
+ - allow to hide bots in user list
+
+## 0.224
+ - fix startposition type ignored
+
+## 0.223
+ - fix invalid sync check (makes relayhost/hosting work again)
+ - set focus to text input when prompting
+ - allow to select engine version for singleplayer games (thanks OursDesCavernes!)
+ - fix detection of autohosts
+ - fix crash when selecting map / clicking start on autohosts
+
+## 0.222
+ - fix crash when going to tools/download archives
+ - (try to) fix bug: tipwindow consumes first mouse events
+
+## 0.221
+ - fix crash when going into edit/preferences
+
+## 0.220
+ - Add (rounded) TrueSkill column to BattleRoomList
+ - fix usage of relayhost
+ - fix crash when only .bmp sideicon was available for a game
+ - fix automatic reconnect
+ - fix crash after reconnect
+ - fix game preset load/save
+ - fix compile on gentoo
+ - fix colors when hosting
+ - fix chatlog couldn't be written when using local lobby server
+
+## 0.219
+ - remove /changpassword2: merge into /changepassword
+ - add vote panel
+ - springlobby now requires at least gcc 4.7
+ - fix some minor memleaks
+ - fix crash on lobby server inconsistency
+ - default disable notification popups when ingame
+
+## 0.218
+ - removed A LOT of scrollbars
+ - allow to download engine:spring 98.0
+ - don't flash window titlebar when chat is active
+ - fix tooltips not shown on windows
+ - fix memleak: unitsync wasn't probably unloaded
+ - automaticly rejoin all channels on restart
+
+## 0.217
+ - fix startpos not selectable in lobby
+ - fix demo file deleted when spring is already running (linux only)
+ - enable tooltips on windows
+ - usual code cleanup
+ - fix vars not always initialized: current screen resolution now is 0x0 when unset
+
+## 0.216
+ - fix chat autoscroll on linux
+ - fix crash due notifications on windows
+ - add "Test Notification" button to settings
+ - default (re)enable notifications
+ - remove duplicate error messageboxes (registration/login denied/...)
+
+## 0.215
+ - skipped
+
+## 0.214
+ - default disable notification popups on windows (got broken / crashes)
+ - no double-error messages on lobby server errors
+ - re-implement sound support for windows (ring, etc)
+
+## 0.213
+ - wxWidgets 2.9 is required to compile SpringLobby
+ - fix logging (thanks Usaga!)
+ - a lot of wx3 fixes
+ - only check map/game existence in battlelist (skip hash as it depends on used engine)
+ - make content search blocking/non-threaded (should fix all/most issues)
+ - add download prompt when no engine version can be found on lobby server connect
+ - replace setup info in BattleRoom with images
+ - add zebra striping effect in ListCtrl widgets
+ - fix /help in battleroom
+ - try to reduce flickering
+ - completely remove dedicated springsettings executable (was disabled for quiet a while)
+
+## 0.211 - 0.212
+ - skipped due build error
+
+## 0.210
+ - fix autoupdater (Couldn't cleanup ...)
+
+## 0.209
+ - fix a lot of bugs in battle/playback filter (thanks Usaga!)
+ - improve russion translations (thanks Usaga!)
+ - add ability for search/filter players in chat (thanks Usaga!)
+ - some osx-related fixes
+ - add command line switch --version
+ - add "Download engine" to battle list context menu
+ - new users don't auto-join #main any more
+ - remove #main from autojoin channels once
+ - allow cpuid to be set by config var
+ - increase connect timeouts for downloader
+ - fix autohost detection (clicking "Start" should send !start again)
+
+## 0.202 - 0.208
+ - skipped due build errors
+
+## 0.201
+ - reworked connect / register dialog
+ - fix autoupdater / further reduce size
+ - fix SafeMode config setting
+ - show more verbose message when searching for downloadable content
+ - fix error in download dialog
+ - fix compile on fedora
+
+## 0.200
+ - reduce updater size: remove gui parts from updater
+ - updater: don't ask for admin rights when not needed
+ - battlelist: show if engine is installed
+ - delay lobby server reconnect on each retry
+
+## 0.199
+ - write script.txt into lobby writeable dir: possible fix "script.txt" not found errors
+ - don't disconnect from server when local clock is changed
+ - fix blury map images
+ - fix rare crash at exit
+ - fix deleting replays with "DEL"
+ - fix replay list
+
+## 0.198
+ - fix blurry image in map preview
+ - fix replays list & spring engine list  (thanks MajBoredom)
+ - the usal code cleanup
+
+## 0.197
+ - fix osx compile
+ - store default DownloadDir in springlobby.conf
+ - fix rapid repo isn't automaticly updated
+ - don't crash when cached images are broken
+ - fix some wx3.0 bugs/crashes, some cleanups
+ - remove reconnect dialog
+
+## 0.196
+ - downloaded engines are non-portable: cache & settings are shared again
+ - progress bar for most download types
+ - set cpu to 0
+
+## 0.195
+ - added workaround for version check of zk-lobby/springie hosted games
+
+## 0.194
+ - hopefully fixed version when sourcedir != builddir
+
+## 0.193
+ - fix crash on reconnect, hopefully fix autoupdater, fix version number in builds from tarball
+
+## 0.191-0.192
+ - broken builds, no release made
+
+## 0.190
+ - fix autoreconnect, fix option number passed always as 0 to script.txt
+ - implement p compatibility flag (agreement of registration in txt format)
+
+## 0.189
+ - new updating system: springlobby downloads the update file and extracts it.
+   then it runs springlobby_updater which updates all files and re-runs springlobby.
+   no more waiting for springlobby_updater to download. also the update-urls can
+   be configured, this allows to select updates from the develop branch.
+ - fix tab selection at start
+ - fix some unicode path problems (win32 only)
+ - allow battles to be joined without spring/unitsync installed
+ - made faction icon transparent
+ - always show "user left" when he was active before (=wrote sth.)
+
+## 0.188
+ - fix win32 compile
+
+## 0.187
+ - fix problems with non-asscii chars in HOME path
+ - fix some unitsync related crashes
+ - more verbose "Timeout assumed" message / maybe fix it
+
+## 0.186
+ - fix crash in battle room at map change
+
+## 0.185
+ - improve caching, most data is now shared accross multiple spring/unitsync versions:
+   at first start the cache folder is automaticly cleared and cache files are recreated in background!
+   this will can take a very long time. don't wonder when springlobby takes 100% cpu while doing this.
+ - fix team colors/faction in replay list
+ - fix demo playback
+## 0.184
+ - fix crash on battle leave when ai(s) are present
+
+## 0.183
+ - fix battle filter settings not stored, add "Tools->Download Archives"
+ - replace "Tools->Show Screenshots" with "Tools->Open Spring Data Dir"
+
+## 0.182
+ - hide "couldn't open replay" error message
+
+## 0.181
+ - fix crash at exit, tons of fixes:[url=https://github.com/springlobby/springlobby/compare/0.180...0.181]detailed changelog
+
+## 0.180
+ - fix log spam
+
+## 0.179
+ - (hopefully) fixes debian packaging bug
+
+## 0.178
+ - allow autoupdate check to be disabled on linux, fix tabs reset on battleroom leave
+
+## 0.177
+ - fix chat font & icons
+
+## 0.176
+ - adds the missing eu flag & rest language to avoid random language to be selected for some users
+
+## 0.175
+ - fix language selection on windows, also allows to change lang to english.
+
+## 0.174
+ - fixes the crash when opening springsettings & the crash on exit.
+
+## 0.173
+ - fix major bug
+
+## 0.172
+ - fix major bug
+

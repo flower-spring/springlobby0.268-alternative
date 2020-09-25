@@ -1,0 +1,33 @@
+language: cpp
+compiler:
+  - gcc
+  - clang
+dist: trusty
+cache: ccache
+
+addons:
+  apt:
+    packages:
+    - libwxgtk3.0-dev
+    - libboost-thread1.55-dev
+    - libboost-system1.55-dev
+    - libboost-test1.55-dev
+    - libalure-dev
+    - cmake3
+    - libssl-dev
+
+before_script:
+# optional dependencies
+  - git submodule update --init --recursive
+  - cmake -DSPRINGLOBBY_UPDATER:BOOL=ON -DCMAKE_INSTALL_PREFIX:PATH=/tmp .
+script:
+  - make -j2 -k
+  - make -k check
+  - make install
+notifications:
+  irc:
+    channels:
+      - chat.freenode.net#springlobby
+    on_success: change
+    on_failure: change
+
