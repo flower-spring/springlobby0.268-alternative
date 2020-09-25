@@ -92,6 +92,12 @@ You could contact me on discord, github or in springlobby: my pseudo is flower.
 &nbsp;  
 &nbsp;  
 
+# Installer :
+
+I didn't uploaded an installer like the original lobby had with an installation in Program Files(x86). It took time to understand how to do. Maybe in the future I'll upload one. For the moment, you should have the choice between an exe, and an installer (it's the same program, except the installer has a smaller size (about 6Mb)).
+&nbsp;  
+&nbsp;  
+
 # Readme from springlobby original (https://github.com/springlobby/springlobby)
 
 all installation information can be found here:
