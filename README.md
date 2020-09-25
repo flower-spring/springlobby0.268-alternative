@@ -1,4 +1,4 @@
-# Springlobby0.268-alternative
+# springlobby.268-alternative
 
 springlobby 0.268 with some fixes and some new features.
 
@@ -7,7 +7,7 @@ springlobby 0.268 with some fixes and some new features.
 
 ## Battlerrom tab : 
 
-* contextual menu fixed: so in tchat bar. No more needed to write "!ring playername" necessarily. Just to right click on a player name and then click on ring.
+* contextual menu fixed: In tchat bar, no more needed to type "!ring playername" necessarily. Just to right click on a player name and then click on ring.
   &nbsp;  
    ![alt text](images_for_readme/contextual_menu.png)     
   &nbsp;  
