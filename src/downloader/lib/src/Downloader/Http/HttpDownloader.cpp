@@ -27,26 +27,6 @@
 #include "Downloader/CurlWrapper.h"
 #include "lib/base64/base64.h"
 
-#ifdef WIN32
-#include <winsock2.h>
-#else
-#include <sys/select.h>
-#endif
-
-#include <stdio.h>
-#include <string>
-#include <sstream>
-#include <stdlib.h>
-#include <algorithm> //std::min, std::max
-
-CHttpDownloader::CHttpDownloader()
-{
-}
-
-CHttpDownloader::~CHttpDownloader()
-{
-}
-
 static size_t WriteMemoryCallback(void* contents, size_t size, size_t nmemb,
 				  void* userp)
 {
