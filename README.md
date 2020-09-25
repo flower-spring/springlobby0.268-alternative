@@ -1,13 +1,13 @@
 # Springlobby0.268-alternative
 
-springlobby 0.268 with some fixes and some changes.
+springlobby 0.268 with some fixes and some new features.
 
-# Changes compared to 0.268
+# Fixes and new features made to springlobby 0.268
 
 
 ## Battlerrom tab : 
 
-* contextual menu fixed: so in tchat bar you don't have to write "!ring playername" necessarily. Just right click on a player name and then click on ring.
+* contextual menu fixed: so in tchat bar. No more needed to write "!ring playername" necessarily. Just to right click on a player name and then click on ring.
   &nbsp;  
    ![alt text](images_for_readme/contextual_menu.png)     
   &nbsp;  
@@ -15,7 +15,7 @@ springlobby 0.268 with some fixes and some changes.
 * better behavior with cases to tick.
   ![alt text](images_for_readme/spectator_imready_autolaunch_fix.png)
 
-  Auto-launch game case not auto ticked when you go spectator. So game not autolaunch.
+  At least, auto-launch game case is not auto ticked when you go spectator. So game not autolaunch.
 
   
   &nbsp;  
