@@ -86,7 +86,7 @@ springlobby 0.268 with some fixes and new features.
 &nbsp;  
 &nbsp;  
 
-# Contact:
+# Contact/infos about springlobby0.268-alternative:
 
 You could contact me on discord, github or in springlobby: my pseudo is flower.
 &nbsp;  
