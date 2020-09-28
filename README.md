@@ -2,12 +2,27 @@
 
 springlobby 0.268 with some fixes and new features.
 
-# Fixes and new features made to springlobby 0.268
+
+|                           Summary                            |      |
+| :----------------------------------------------------------: | ---- |
+| [Fixes and new features made to springlobby 0.268](#Level_1_summary) |      |
+| [Problems present in 0.268 and still exist with 0.268-alternative](#Level_2_summary) |      |
+|           [Features to consider](#Level_3_summary)           |      |
+| [Contact/infos about springlobby0.268-alternative](#Level_4_summary) |      |
+| [The exes at https://github.com/flower-spring/springlobby0.268-alternative/releases/tag/1](#Level_5_summary) |      |
+| [Readme from springlobby original (https://github.com/springlobby/springlobby)](#Level_6_summary) |      |
+
+
+&nbsp;  
+&nbsp;  
+
+
+# Fixes and new features made to springlobby 0.268 <a id="Level_1_summary"></a>
 
 
 ## Battlerrom tab : 
 
-* contextual menu fixed: In tchat bar, no more needed to type "!ring playername" necessarily. Just right click on a player name and then click on ring.
+* contextual menu fixed: some elements wasn't working. Now, in tchat bar, no more needed to type "!ring playername" necessarily. Just right click on a player name and then click on ring.
   &nbsp;  
    ![alt text](images_for_readme/contextual_menu.png)     
   &nbsp;  
@@ -21,7 +36,7 @@ springlobby 0.268 with some fixes and new features.
   &nbsp;  
   &nbsp;  
 
-* 4 new buttons : status, balance, fixcolors, ring.
+* 4 new buttons : !status, !balance, !fixcolors, !ring.
   ![alt text](images_for_readme/4_buttons_added_battleroom_tab.png)
   &nbsp;  
   (before:
@@ -32,7 +47,12 @@ springlobby 0.268 with some fixes and new features.
 
 * Fixed the disappearance of some buttons if you changed the size of the window with battleroomtab activated. Sometime the start button was disappearing. Now it should be solved by placing buttons on 2 lines. (Tested. Worked for windows. Not for linux.)
 &nbsp;  
-![alt text](images_for_readme/sometimes_start_button_disappeared.png)
+
+
+| As you could see Spectate button is like rogned | ![alt text](images_for_readme/sometimes_start_button_disappeared.png) |
+| ----------------------------------------------- | ------------------------------------------------------------ |
+|                                                 |                                                              |
+
 &nbsp;  
 &nbsp;  
 
@@ -60,22 +80,22 @@ springlobby 0.268 with some fixes and new features.
 &nbsp;  
 ***
 
-## Problems present in 0.268 and still exist with 0.268-alternative :
+# Problems present in 0.268 and still exist with 0.268-alternative :<a id="Level_2_summary"></a>
 
 - After the map is changed from selectmap window the map name visible in battleroom tab is not changed.
-
 - Country flags are not displayed when mouse is over a player name (unsure if this situation is generalized or it's just for me).
+- Maps are not sorted correctly after you selected one item. It's needed to click on sign "<" or ">".  
 - Parameters are displayed two times instead only one, in select map window.
 
 | Parameters displayed two times in select map window. | ![parameters_in_double_selectmap_window](images_for_readme/parameters_in_double_selectmap_window.png) |
 | ---------------------------------------------------- | ------------------------------------------------------------ |
 |                                                      |                                                              |
-- Maps are not sorted correctly after you selected one item. It's needed to click on sign "<" or ">". 
+
 &nbsp;  
 &nbsp;  
 
-## Features to consider:
-- Auto launch a replay if double click on a line of the replays list (it is when you are in replays tab).
+# Features to consider:<a id="Level_3_summary"></a>
+- Auto launch a replay if double click on a line of the replays list (it is when you are in replays tab): could be less complicated than having to click on the button watch.
 - Display geos positions on the map
 
 | Actually geos positions are not displayed on map | ![feature_request_show_geospots_on_map](images_for_readme/feature_request_show_geospots_on_map.png) |
@@ -86,19 +106,24 @@ springlobby 0.268 with some fixes and new features.
 &nbsp;  
 &nbsp;  
 
-# Contact/infos about springlobby0.268-alternative:
+# Contact/infos about springlobby0.268-alternative:<a id="Level_4_summary"></a>
 
 You could contact me on discord, github or in springlobby: my pseudo is flower.
 &nbsp;  
 &nbsp;  
-
-# Installer :
-
-I didn't uploaded an installer like the original lobby had with an installation in Program Files(x86). It took time to understand how to do. Maybe in the future I'll upload one. For the moment, you should have the choice between an exe, and an installer (it's the same program, except the installer has a smaller size (about 6Mb)).
-&nbsp;  
 &nbsp;  
 
-# Readme from springlobby original (https://github.com/springlobby/springlobby)
+# The exes at https://github.com/flower-spring/springlobby0.268-alternative/releases/tag/1 :<a id="Level_5_summary"></a>
+
+I didn't uploaded an installer like the original lobby had with an installation in Program Files(x86). It took time to understand how to do. Maybe in the future I'll upload one. For the moment, you should have the choice between
+
+-  an exe (22Mb)
+- an installer (witch contain the same exe (22Mb), except the installer has a smaller size (about 6Mb) and you need more steps to obtain the exe(22Mb) after you have downloaded the installer(6Mb)).
+&nbsp;  
+&nbsp;  
+&nbsp;  
+
+# Readme from springlobby original (https://github.com/springlobby/springlobby)<a id="Level_6_summary"></a>
 
 all installation information can be found here:
 https://github.com/springlobby/springlobby/wiki/Install
