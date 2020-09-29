@@ -80,7 +80,7 @@ springlobby 0.268 with some fixes and new features.
 &nbsp;  
 ***
 
-# Problems present in 0.268 and still exist with 0.268-alternative :<a id="Level_2_summary"></a>
+# Problems in 0.268 and still existing with 0.268-alternative :<a id="Level_2_summary"></a>
 
 - After the map is changed from selectmap window the map name visible in battleroom tab is not changed.
 - Country flags are not displayed when mouse is over a player name (unsure if this situation is generalized or it's just for me).
