@@ -20,7 +20,7 @@ springlobby 0.268 with some fixes and new features.
 # Fixes and new features made to springlobby 0.268 <a id="Level_1_summary"></a>
 
 
-## Battlerrom tab : 
+## Battleroom tab : 
 
 * contextual menu fixed: some elements wasn't working. Now, in tchat bar, no more needed to type "!ring playername" necessarily. Just right click on a player name and then click on ring.
   &nbsp;  
@@ -150,6 +150,3 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License along
 with this program; if not, write to the Free Software Foundation, Inc.,
 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
-
-
-
