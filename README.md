@@ -13,86 +13,90 @@ springlobby 0.268 with some fixes and new features.
 | [Readme from springlobby original (https://github.com/springlobby/springlobby)](#Level_6_summary) |      |
 
 
-&nbsp;  
-&nbsp;  
-
-
+&nbsp;
+***
 # Fixes and new features made to springlobby 0.268 <a id="Level_1_summary"></a>
 
 
 ## Battleroom tab : 
 
 * contextual menu fixed: some elements wasn't working. Now, in tchat bar, no more needed to type "!ring playername" necessarily. Just right click on a player name and then click on ring.
-  &nbsp;  
-   ![alt text](images_for_readme/contextual_menu.png)     
-  &nbsp;  
+  &nbsp;
+   ![alt text](images_for_readme/contextual_menu.png)
+
+
+&nbsp;
 
 * better behavior with cases to tick.
   ![alt text](images_for_readme/spectator_imready_autolaunch_fix.png)
 
   At least, auto-launch game case is not auto ticked when you go spectator. So game not autolaunch.
 
-  
-  &nbsp;  
-  &nbsp;  
+
+&nbsp;
 
 * 4 new buttons : !status, !balance, !fixcolors, !ring.
   ![alt text](images_for_readme/4_buttons_added_battleroom_tab.png)
-  &nbsp;  
+  &nbsp;
   (before:
   ![alt text](images_for_readme/battleroom_tab_buttons_before.png)
   )
-  &nbsp;  
-  &nbsp;  
+
+
+&nbsp;
 
 * Fixed the disappearance of some buttons if you changed the size of the window with battleroomtab activated. Sometime the start button was disappearing. Now it should be solved by placing buttons on 2 lines. (Tested. Worked for windows. Not for linux.)
-&nbsp;  
 
 
 | As you could see Spectate button is like rogned | ![alt text](images_for_readme/sometimes_start_button_disappeared.png) |
 | ----------------------------------------------- | ------------------------------------------------------------ |
 |                                                 |                                                              |
 
-&nbsp;  
-&nbsp;  
+
+&nbsp;
 
 ### Select map window : now background is black, instead grey. Could less hurt eyes.
 
 | before                                                                          | after                                                                            |
 | ------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- |
 | ![alt text](images_for_readme/select_map_grey_background.png) | ![alt text](images_for_readme/select_map_black_background.png) |
-&nbsp;    
+
+
+&nbsp;
 
 ## Chat tab : new column with TS displayed (after you joined battleroom tab at least one time): so you can have ts of all players now visible here.
-&nbsp;  
-  ![alt text](images_for_readme/ts_added_official_server_size_reduced.png)     
+&nbsp;
+  ![alt text](images_for_readme/ts_added_official_server_size_reduced.png)
 
-&nbsp;  
 
+&nbsp;
 
 ## Battlelist tab : new column with TS displayed (after you joined battleroom at least one time)
 ![alt text](images_for_readme/battlelist_tab.png)
-&nbsp;  
-&nbsp;  
+
+
+&nbsp;
 
 ## Message : "You are already in a battle..." removed.
 ![alt text](images_for_readme/window_you_are_already_in_a_battle.png)
-&nbsp;  
+
+
+&nbsp;
 ***
 
 # Problems in 0.268 and still existing with 0.268-alternative :<a id="Level_2_summary"></a>
 
 - After the map is changed from selectmap window the map name visible in battleroom tab is not changed.
 - Country flags are not displayed when mouse is over a player name (unsure if this situation is generalized or it's just for me).
-- Maps are not sorted correctly after you selected one item. It's needed to click on sign "<" or ">".  
+- Maps are not sorted correctly after you selected one item. It's needed to click on sign "<" or ">".
 - Parameters are displayed two times instead only one, in select map window.
 
 | Parameters displayed two times in select map window. | ![parameters_in_double_selectmap_window](images_for_readme/parameters_in_double_selectmap_window.png) |
 | ---------------------------------------------------- | ------------------------------------------------------------ |
 |                                                      |                                                              |
 
-&nbsp;  
-&nbsp;  
+
+&nbsp;
 
 # Features to consider:<a id="Level_3_summary"></a>
 - Auto launch a replay if double click on a line of the replays list (it is when you are in replays tab): could be less complicated than having to click on the button watch.
@@ -102,16 +106,15 @@ springlobby 0.268 with some fixes and new features.
 | :----------------------------------------------: | ------------------------------------------------------------ |
 |                                                  |                                                              |
 
-&nbsp;  
-&nbsp;  
-&nbsp;  
+
+&nbsp;
 
 # Contact/infos about springlobby0.268-alternative:<a id="Level_4_summary"></a>
 
 You could contact me on discord, github or in springlobby: my pseudo is flower.
-&nbsp;  
-&nbsp;  
-&nbsp;  
+
+
+&nbsp;
 
 # The exes at https://github.com/flower-spring/springlobby0.268-alternative/releases/tag/1 :<a id="Level_5_summary"></a>
 
@@ -119,9 +122,9 @@ I didn't uploaded an installer like the original lobby had with an installation 
 
 -  an exe (22Mb)
 - an installer (witch contain the same exe (22Mb), except the installer has a smaller size (about 6Mb) and you need more steps to obtain the exe(22Mb) after you have downloaded the installer(6Mb)).
-&nbsp;  
-&nbsp;  
-&nbsp;  
+
+
+&nbsp;
 
 # Readme from springlobby original (https://github.com/springlobby/springlobby)<a id="Level_6_summary"></a>
 
