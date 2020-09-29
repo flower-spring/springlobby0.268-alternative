@@ -6,7 +6,7 @@ springlobby 0.268 with some fixes and new features.
 |                           Summary                            |      |
 | :----------------------------------------------------------: | ---- |
 | [Fixes and new features made to springlobby 0.268](#Level_1_summary) |      |
-| [Problems present in 0.268 and still exist with 0.268-alternative](#Level_2_summary) |      |
+| [Problems in 0.268 and still existing with 0.268-alternative](#Level_2_summary) |      |
 |           [Features to consider](#Level_3_summary)           |      |
 | [Contact/infos about springlobby0.268-alternative](#Level_4_summary) |      |
 | [The exes at https://github.com/flower-spring/springlobby0.268-alternative/releases/tag/1](#Level_5_summary) |      |
