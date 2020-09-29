@@ -87,8 +87,8 @@ springlobby 0.268 with some fixes and new features.
 # Problems in 0.268 and still existing with 0.268-alternative :<a id="Level_2_summary"></a>
 
 - After the map is changed from selectmap window the map name visible in battleroom tab is not changed.
-- Country flags are not displayed when mouse is over a player name (unsure if this situation is generalized or it's just for me).
-- Maps are not sorted correctly after you selected one item. It's needed to click on sign "<" or ">".
+- The name of the country's flag is not displayed when mouse is over the country flag of a player (unsure if this situation is generalized or it's just for me).
+- Maps are not sorted correctly after you selected one item (for example size). It's needed to click on sign "<" or ">".
 - Parameters are displayed two times instead only one, in select map window.
 
 | Parameters displayed two times in select map window. | ![parameters_in_double_selectmap_window](images_for_readme/parameters_in_double_selectmap_window.png) |
@@ -100,7 +100,7 @@ springlobby 0.268 with some fixes and new features.
 
 # Features to consider:<a id="Level_3_summary"></a>
 - Auto launch a replay if double click on a line of the replays list (it is when you are in replays tab): could be less complicated than having to click on the button watch.
-- Display geos positions on the map
+- Display geothermals positions on the map
 
 | Actually geos positions are not displayed on map | ![feature_request_show_geospots_on_map](images_for_readme/feature_request_show_geospots_on_map.png) |
 | :----------------------------------------------: | ------------------------------------------------------------ |
