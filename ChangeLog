@@ -1,7 +1,7 @@
 ChangeLog of Springlobby
 
 ## 0.268-alternative
- - contextual menu repaired when click on a player name in battleroom tab
+ - contextual menu repaired when right click on a player name in battleroom tab
  - better behavior with case to tick in battleroom tab
  - 4 new buttons in battleroom tab : !status, !balance, !fixcolors, !ring
  - fixed the disappearance of some buttons if you changed the size of the window with battleroomtab activated
